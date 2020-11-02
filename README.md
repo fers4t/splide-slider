@@ -5,10 +5,10 @@
 Is WordPress plugin for [SpliderJS](https://splidejs.com/)
 
 # motivation
-you know, making wordpress fast is hard sometimes. we can create custom sliders without bullshit for a "real" dynamic slider. but, it's not easy for somebody. in this position, i've tried that create an alternative slider for wordpress for that. i've used [SpliderJS](https://splidejs.com/) and i like it really. i hope you like it too.
+you know, making wordpress fast is hard sometimes. we can create custom sliders without bullshit for a "real" dynamic slider. but, it's not easy for somebody. in this position, i've tried that create an alternative slider for wordpress for that. i've used [SplideJS](https://splidejs.com/) and i like it really. i hope you like it too.
 
 # features
-look [SpliderJS](https://splidejs.com/) documentation for that.
+look [SplideJS](https://splidejs.com/) documentation for that.
 
 # usage
 
