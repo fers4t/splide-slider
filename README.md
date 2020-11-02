@@ -1,3 +1,5 @@
+# IN DEVELOPMENT BUT WORKS
+
 ![enter image description here](https://i.ibb.co/Vth0w21/Ekran-Resmi-2020-11-02-18-49-40.png)
 # splider-slider
 Is WordPress plugin for [SpliderJS](https://splidejs.com/)
