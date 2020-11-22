@@ -23,3 +23,5 @@ include plugin_path . "/panel/homepage.php";
 
 // shortcode
 include plugin_path . "/include/shortcode.php";
+
+require_once('widget/elementor/splide.php');

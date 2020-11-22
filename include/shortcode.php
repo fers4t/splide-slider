@@ -3,6 +3,7 @@
 function geyik_slider_sc($atts)
 {
     extract(shortcode_atts(array(
+        'class'             => "karageyik",
         'category'			=> null,
         'count'				=> 6,
         'order_by'			=> "date",
@@ -18,7 +19,7 @@ function geyik_slider_sc($atts)
 	), $atts));
 	
     $args = array(
-        'category__and'				=> array($category),
+        'category'				=> array($category),
         'numberposts'		=> $count,
         'order_by'			=> $order_by,
         'order'				=> $order
@@ -35,7 +36,7 @@ function geyik_slider_sc($atts)
     $print .= "<script style='display:none !important' type='text/javascript' src='" . plugin_url . "/assets/3rd/js/splide/splide.min.js'></script>";
     $print .= "<link style='display:none !important' rel='stylesheet' type='text/css' href='" . plugin_url . "/assets/3rd/js/splide/splide.min.css'>";
 
-    $print .=  "    <div class='splide'>";
+    $print .=  "    <div class='splide $class'>";
     $print .=  " <div class='splide__arrows'>";
     $print .=  " 	<button class='splide__arrow splide__arrow--prev'>";
     $print .=  " 		<i class='tdc-font-tdmp tdc-font-tdmp-arrow-left'></i>";
@@ -79,7 +80,7 @@ function geyik_slider_sc($atts)
     $print .=  "	</div>";
 
     $print .= "<script>
-				new Splide( '.splide', {
+				new Splide( '.$class', {
 					type   		: 'loop',
 					autoWidth	:  $autowidth,
 					focus		: '$focus',
