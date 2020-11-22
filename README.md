@@ -11,7 +11,7 @@ you know, making wordpress fast is hard sometimes. we can create custom sliders 
 look [SplideJS](https://splidejs.com/) documentation for that.
 
 # usage
-
+ - you must define a class if you want to use multiple slider in same page.
  - this plugin is working with shortcodes. so, you need to use our
    shortcode for displaying slider in your website. slider's shortcode
    is `[g_slider]` . 
