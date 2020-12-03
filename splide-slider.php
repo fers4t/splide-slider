@@ -12,16 +12,26 @@
  * Domain Path:       /l10n
  */
 
-DEFINE('plugin_path',plugin_dir_path( __FILE__ ) );
-DEFINE('plugin_url',plugin_dir_url( __FILE__ ) );
+ // constants
+DEFINE('plugin_path', plugin_dir_path(__FILE__));
+DEFINE('plugin_url', plugin_dir_url(__FILE__));
+
+DEFINE('kg_view_path', plugin_dir_path(__FILE__) . "/view/");
+DEFINE('kg_view_url', plugin_dir_url(__FILE__) . "/view/");
+
+DEFINE('kg_themes_path', kg_view_path . "public/themes/");
+DEFINE('kg_themes_url', kg_view_url . "public/themes");
+
+DEFINE('kg_controller_path', plugin_dir_path(__FILE__) . "/controller/");
+DEFINE('kg_controller_url', plugin_dir_url(__FILE__) . "/controller/");
 
 // functions
 include plugin_path . "/include/functions.php";
 
 // panel
-include plugin_path . "/panel/homepage.php";
+include plugin_path . "/modal/panel/homepage.php";
 
 // shortcode
 include plugin_path . "/include/shortcode.php";
 
-require_once('widget/elementor/splide.php');
+require_once('include/widget/elementor/splide.php');

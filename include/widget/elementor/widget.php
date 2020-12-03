@@ -82,7 +82,7 @@ class My_Widget_1 extends Widget_Base
     
     protected function render()
     {
-        $settings = $this->get_settings_for_display();
+        $settings = $this->get_settinkg_for_display();
         $shortcode = "[g_slider class='$settings[class]' category='$settings[category]' order='$settings[order]' count='$settings[count]' ]";
         $shortcode = do_shortcode(shortcode_unautop($shortcode));
         ?>
