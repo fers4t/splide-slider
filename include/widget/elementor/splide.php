@@ -15,7 +15,7 @@ class My_Elementor_Widgets
 
     protected function __construct()
     {
-        require_once('widget.php');
+        include 'widget.php';
         add_action('elementor/widgets/widgets_registered', [ $this, 'register_widgets' ]);
     }
 

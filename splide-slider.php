@@ -12,7 +12,7 @@
  * Domain Path:       /l10n
  */
 
- // constants
+// constants
 DEFINE('plugin_path', plugin_dir_path(__FILE__));
 DEFINE('plugin_url', plugin_dir_url(__FILE__));
 
@@ -34,4 +34,6 @@ include plugin_path . "/modal/panel/homepage.php";
 // shortcode
 include plugin_path . "/include/shortcode.php";
 
-require_once('include/widget/elementor/splide.php');
+
+// elementor widget need more work
+// include 'include/widget/elementor/splide.php';

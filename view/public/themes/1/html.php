@@ -1,5 +1,8 @@
 
 <div class='splide <?php echo $class ?>'>
+<?php
+    if ($show_arrows === true) {
+        ?>
     <div class='splide__arrows'>
         <button class='splide__arrow splide__arrow--prev'>
             <i class='tdc-font-tdmp tdc-font-tdmp-arrow-left'></i>
@@ -8,6 +11,18 @@
             <i class='tdc-font-tdmp tdc-font-tdmp-arrow-right'></i>
         </button>
     </div>
+        <?php
+    } else {
+        ?>
+    <style>
+    .splide__arrows {
+        display: none !important
+    }
+    </style>
+        <?php
+    }
+
+?>
     <div class='splide__track'>
         <ul class='splide__list'>
         <?php
@@ -25,19 +40,18 @@
             <li style='background-image:url(<?php echo $kg_post_image_fr ?> );background-size:cover' class='splide__slide'>
                 <a class='kg_slider_content' href='<?php echo $kg_post_link_fr ?>'>
                     <h5 class='kg_slide_title'><?php echo $kg_post_name_fr ?> </h5>
-                    <span class='kg_slide_excerpt'><?php echo $kg_post_excerpt_fr ?></span>
+                    <?php
+                        if ($show_excerpt === true) {
+                            ?>
+                            <span class='kg_slide_excerpt'><?php echo $kg_post_excerpt_fr ?></span>
+                            <?php
+                        } ?>
                 </a>
             </li>
             <?php
         }
         ?>
 
-            <div class='splide__arrows kg_dots'>
-                <button class='splide__arrow splide__arrow--prev'>
-                </button>
-                <button class='splide__arrow splide__arrow--next'>
-                </button>
-            </div>
         </ul>
     </div>
 </div>
